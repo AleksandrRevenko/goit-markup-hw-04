@@ -8,6 +8,8 @@
     --team-background-color: #F4F4FD;
     --background: #FFFFFF;
     --color-border: #8E8F99;
+    --background-footer-icon: #31D0AA;
+    --icon-commpany: #AFB1B8;
 }
 
 .invisible {
@@ -138,6 +140,7 @@ body {
 
 /*hero*/
 .section-hero {
+    max-width: 1440;
     text-align: center;
     background-color: var(--primary-header-color);
     background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
@@ -375,10 +378,10 @@ body {
     margin: 0;
 }
 
-.item-images {
-    border-bottom: 1px solid var(--color-footer);
+.item-images:hover,
+.item-images:focus {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
-
 
 
 .title-portfolio {
@@ -411,7 +414,7 @@ body {
     border-bottom: 1px solid var(--color-footer);
     border-left: 1px solid var(--color-footer);
     border-right: 1px solid var(--color-footer);
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+
 }
 
 /*icon*/
@@ -510,7 +513,14 @@ body {
 .icon-commpany {
     justify-content: center;
     align-items: center;
+    fill: var(--icon-commpany);
 }
+
+.icon-commpany:hover,
+.icon-commpany:focus {
+    fill: var(--color-hover);
+}
+
 
 /* footer social */
 .div-footer {
@@ -561,4 +571,22 @@ body {
     background-color: #4D5AE5;
     color: var(--team-background-color);
     border-radius: 50%;
+}
+
+.icon-social-footer {
+    width: 75%;
+    height: 75%;
+    border-radius: 50%;
+    display: flex;
+    color: var(--team-background-color);
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.icon-social-footer:hover,
+.icon-social-footer:focus {
+    border-radius: 50%;
+    background-color: var(--background-footer-icon);
+    ;
 }
