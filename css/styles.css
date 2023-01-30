@@ -140,12 +140,12 @@ body {
 
 /*hero*/
 .section-hero {
-    max-width: 1440;
+    max-width: 1440px;
     text-align: center;
     background-color: var(--primary-header-color);
     background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: 50% 50%;
     background-size: cover;
     padding-top: 188px;
     padding-bottom: 188px;
@@ -164,7 +164,9 @@ body {
 
 .hero-button {
     display: inline-block;
+    cursor: pointer;
     border-radius: 4px;
+    border: var(--color-logo-web);
     padding: 16px 32px;
     background-color: var(--color-logo-web);
     color: var(--color-white);
@@ -178,6 +180,7 @@ body {
 .hero-button:hover,
 .hero-button:focus {
     background-color: var(--color-hover);
+    border: var(--color-hover);
 }
 
 /*section quality*/
@@ -356,6 +359,7 @@ body {
 .button-portfolio:focus {
     background-color: var(--color-logo-web);
     color: var(--team-background-color);
+    border: 1px solid var(--color-hover);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
@@ -378,9 +382,14 @@ body {
     margin: 0;
 }
 
+.item-images {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
 .item-images:hover,
 .item-images:focus {
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    ;
 }
 
 
@@ -442,8 +451,8 @@ body {
 }
 
 .social-item {
-    width: 44px;
-    height: 44px;
+    width: 40px;
+    height: 40px;
     gap: 10px;
     display: flex;
     align-items: center;
@@ -509,6 +518,10 @@ body {
     align-items: center;
 }
 
+.commpany:hover,
+.commpany:focus {
+    border: 1px solid var(--color-hover);
+}
 
 .icon-commpany {
     justify-content: center;
@@ -519,6 +532,7 @@ body {
 .icon-commpany:hover,
 .icon-commpany:focus {
     fill: var(--color-hover);
+    border: var(--color-hover);
 }
 
 
@@ -540,14 +554,17 @@ body {
     margin-right: 120px;
 }
 
+.footer-list-social {
+    gap: 10px;
+}
+
 .footer-title-social {
     color: var(--background);
 }
 
 .social-item-footer {
-    width: 44px;
-    height: 44px;
-    gap: 10px;
+    width: 40px;
+    height: 40px;
     display: flex;
     align-items: center;
     list-style: none;
@@ -560,7 +577,9 @@ body {
 .icon-social {
     width: 100%;
     height: 100%;
+    background-color: var(--color-logo-web);
     border-radius: 50%;
+    fill: var(--color-logo-web);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -568,14 +587,14 @@ body {
 
 .icon-social:hover,
 .icon-social:focus {
-    background-color: #4D5AE5;
+    background-color: var(--color-hover);
     color: var(--team-background-color);
     border-radius: 50%;
 }
 
 .icon-social-footer {
-    width: 75%;
-    height: 75%;
+    width: 100%;
+    height: 100%;
     border-radius: 50%;
     display: flex;
     color: var(--team-background-color);
