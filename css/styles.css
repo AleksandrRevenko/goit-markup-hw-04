@@ -51,8 +51,6 @@ body {
 }
 
 .logo {
-    padding-top: 24px;
-    padding-bottom: 24px;
     color: var(--color-logo-web);
     font-family: 'Raleway';
     font-weight: 800;
@@ -262,6 +260,8 @@ body {
 }
 
 .team-subtitle {
+    margin-top: 0;
+    margin-bottom: 8px;
     color: var(--primary-header-color);
     font-weight: 500;
     font-size: 20px;
@@ -276,7 +276,7 @@ body {
 
 .team-text {
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 8px;
     font-size: 16px;
     line-height: 1.5;
     text-align: center;
@@ -291,12 +291,10 @@ body {
 /*footer*/
 .footer {
     background-color: var(--primary-header-color);
-}
-
-.footer-container {
     padding-top: 100px;
     padding-bottom: 100px;
 }
+
 
 
 .logo-footer {
@@ -448,7 +446,7 @@ body {
     padding: 0;
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 24px;
     list-style: none;
 }
 
@@ -490,6 +488,7 @@ body {
 }
 
 .list-commpany {
+    margin: 0;
     padding: 0;
     list-style: none;
     display: flex;
@@ -522,6 +521,7 @@ body {
 
 .commpany:hover,
 .commpany:focus {
+    fill: var(--color-hover);
     border: 1px solid var(--color-hover);
 }
 
@@ -534,7 +534,6 @@ body {
 .icon-commpany:hover,
 .icon-commpany:focus {
     fill: var(--color-hover);
-    border: var(--color-hover);
 }
 
 
