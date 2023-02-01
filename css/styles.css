@@ -517,18 +517,19 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: var(--color-border);
 }
 
 .commpany:hover,
 .commpany:focus {
-    fill: var(--color-hover);
+    color: var(--color-hover);
     border: 1px solid var(--color-hover);
 }
 
 .icon-commpany {
     justify-content: center;
     align-items: center;
-    fill: var(--icon-commpany);
+    fill: currentColor;
 }
 
 .icon-commpany:hover,
